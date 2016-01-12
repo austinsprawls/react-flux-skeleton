@@ -3,6 +3,6 @@
  */
 import React from 'react'
 import ReactDOM from 'react-dom'
-import AppContainer from './components/AppContainer.jsx'
+import App from './components/App'
 
-ReactDOM.render(<AppContainer />, document.getElementById('main'));
+ReactDOM.render(<App />, document.getElementById('main'));
