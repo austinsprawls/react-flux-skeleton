@@ -63,12 +63,8 @@ var appContainer = require('./src/js/components/AppContainer');
 //const loginComp = new LoginPage()
 //  console.log('Component: ', loginComp);
 app.get('/', function(req, res){
-  //var reactElement = React.createElement(LoginPage);
   var reactElement = React.createElement(appContainer);
-  console.log('login page: ', reactElement);
   var reactComp = React.renderToString(reactElement);
-  console.log('logincomponenet: ', reactComp);
-  console.log('Template: ', TEMPLATE.replace(PLACEHOLDER, reactComp));
   return res.send(TEMPLATE.replace(PLACEHOLDER, reactComp))
 });
 
