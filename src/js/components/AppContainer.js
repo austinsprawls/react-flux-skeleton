@@ -8,7 +8,7 @@ import App from './App/App.jsx';
 module.exports = React.createClass({
   render() {
     return (
-      <App />
+      <App radiumConfig={this.props.radiumConfig}/>
     );
   }
 });
